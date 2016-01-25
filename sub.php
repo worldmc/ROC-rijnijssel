@@ -12,7 +12,7 @@ if (!empty($_POST)) {
 	fwrite($myfile, $txt);
 	fclose($myfile);
 
-	header('Location: http://roc.arjovelderman.eu/sub.php');
+	header('Location: sub.php');
 
 // een verschil tussen het submitten en het formulier
  } else { 
@@ -22,7 +22,7 @@ if (!empty($_POST)) {
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" href="http://roc.arjovelderman.eu/css/bootstrap.css">
+		<link rel="stylesheet" href="css/bootstrap.css">
 		<title>ROC Rijnijssel Engineering</title>
 	</head>
 	<body>
@@ -38,7 +38,7 @@ if (!empty($_POST)) {
 				<div class="col-md-6 col-md-offset-3">
 					<div class="" style="text-align: center;">
 						<p> Wil je meer informatie ontvangen over de opleiding en op de hoogte blijven van de open dagen en andere activiteiten? Vul dan hieronder je naam en email in!</p>
-						<form method="post" action="http://roc.arjovelderman.eu/sub.php">
+						<form method="post" action="sub.php">
 						  	<label for="naam">Naam:</label>
 						  	<input id="naam" type="text" name="naam" placeholder="Vul hier je naam in">
 						  	<br>
